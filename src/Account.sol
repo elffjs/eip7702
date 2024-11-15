@@ -27,14 +27,7 @@ contract Account {
 
     uint256 public executeNonce;
 
-    function execute(
-        address to,
-        uint256 value,
-        bytes memory data,
-        uint8 v,
-        bytes32 r,
-        bytes32 s
-    ) public {
+    function execute(address to, uint256 value, bytes memory data, uint8 v, bytes32 r, bytes32 s) public {
         bytes32 digest = keccak256(abi.encode(executeNonce++, to, value, data));
         address signer = ecrecover(digest, v, r, s);
 
