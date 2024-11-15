@@ -34,7 +34,7 @@ This is a near-complete rip off of [the Odyssey example](https://github.com/itha
    ```
 7. Bob submits the authorization and a first execution:
    ```sh
-   cast send $ALICE_ADDR "execute(address,uint256,bytes,uint8,bytes32,bytes32)" $EVE_ADDR 10 0x V $R $S  --private-key $BOB_PK --auth $SIGNED_AUTH
+   cast send $ALICE_ADDR "execute(address,uint256,bytes,uint8,bytes32,bytes32)" $EVE_ADDR 10 0x $V $R $S  --private-key $BOB_PK --auth $SIGNED_AUTH
    ```
 8. We can check that Eve did receive Ethereum, and that Bob got his fee:
    ```sh
