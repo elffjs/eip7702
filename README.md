@@ -1,3 +1,5 @@
+This is a near-complete rip off of [the Odyssey example](https://github.com/ithacaxyz/odyssey-examples/blob/main/chapter1/contracts/src/ERC20Fee.sol). Thank you, Paradigm!
+
 1. Start Anvil in Odyssey mode to gain EIP-7702 support.
    ```sh
    anvil --odyssey
