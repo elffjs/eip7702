@@ -16,7 +16,7 @@ This is a near-complete rip off of [the Odyssey example](https://github.com/itha
 4. For simplicity, we'll have Alice deploy the ERC-20 and so come into possession of a lot of tokens.
    ```sh
    forge create FakeERC20 --private-key $ALICE_PK
-   export ER20_ADDR=0x5FbDB2315678afecb367f032d93F642f64180aa3
+   export ERC20_ADDR=0x5FbDB2315678afecb367f032d93F642f64180aa3
    ```
    For simplicity we've hardcoded this address into the account. As long as you do everything in this order it should match.
 5. Now we deploy the implementation contract for our account:
