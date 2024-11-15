@@ -24,7 +24,7 @@ This is a near-complete rip off of [the Odyssey example](https://github.com/itha
    forge create Account --private-key $ALICE_PK
    export IMPL_ADDR=0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
    ```
-6. Alice signs the authorization, and then creates the signature for `execute`
+6. Alice signs the authorization, and then creates the signature for `execute`. We'll send 10 wei to Eve.
    ```sh
    SIGNED_AUTH=$(cast wallet sign-auth $IMPL_ADDR --private-key $ALICE_PK)
    SIGNED=$(cast wallet sign --no-hash $(cast keccak256 $(cast abi-encode 'f(uint256,address,uint256,bytes)' 0 $EVE_ADDR 10 0x)) --private-key $ALICE_PK)
